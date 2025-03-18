@@ -1,0 +1,38 @@
+.root {
+    -fx-background-color: hsl(0, 0%, 100%);
+    -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
+    -fx-font-family: "Inter", sans-serif;
+}
+
+.button {
+    -fx-background-color: hsl(222.2, 47.4%, 11.2%);
+    -fx-text-fill: hsl(210, 40%, 98%);
+    -fx-border-radius: 0.5rem;
+    -fx-padding: 10px 15px;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: hsl(215, 20.2%, 65.1%);
+}
+
+.text-field, .text-area {
+    -fx-background-color: hsl(210, 40%, 96.1%);
+    -fx-border-color: hsl(214.3, 31.8%, 91.4%);
+    -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
+    -fx-border-radius: 0.5rem;
+    -fx-padding: 5px;
+}
+
+.label {
+    -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.card {
+    -fx-background-color: transparent;
+    -fx-border-color: hsl(214.3, 31.8%, 91.4%);
+    -fx-padding: 15px;
+    -fx-border-radius: 0.5rem;
+}
