@@ -1,11 +1,11 @@
-package edu.ntnu.idatt2003.cardgame;
+package edu.ntnu.idatt2003.cardgame.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class DeckOfCards implements Deck {
+public class DeckOfCards {
     private final char[] suit = { 'S', 'H', 'D', 'C' };
     private List<PlayingCard> deck;
 
@@ -18,26 +18,10 @@ public class DeckOfCards implements Deck {
         }
     }
 
-    @Override
     public void shuffle() {
         Collections.shuffle(deck);
     }
 
-    @Override
-    public PlayingCard drawCard() {
-        return deck.isEmpty() ? null : deck.removeFirst();
-    }
-
-    @Override
-    public int getDeckSize() {
-        return deck.size();
-    }
-
-    public List<PlayingCard> getDeck() {
-        return new ArrayList<>(deck);
-    }
-
-    @Override
     public List<PlayingCard> dealHand(int n) {
         if (n < 1 || n > deck.size()) {
             throw new IllegalArgumentException("Number of hands must be between 1 and " + deck.size());
