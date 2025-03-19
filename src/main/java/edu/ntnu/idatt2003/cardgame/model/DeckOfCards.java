@@ -37,7 +37,8 @@ public class DeckOfCards {
      * @param n the number of cards to deal
      * @return a list of dealt cards
      * @throws IllegalArgumentException if the number of cards to deal is less than 1 or greater than the size of the deck
-     */
+     * @throws IllegalStateException if the deck is empty
+     * */
     public List<PlayingCard> dealHand(int n) {
         if (n < 1 || n > deck.size()) {
             throw new IllegalArgumentException("Number of hands must be between 1 and " + deck.size());
@@ -45,6 +46,9 @@ public class DeckOfCards {
         List<PlayingCard> hand = new ArrayList<>();
         Random rand = new Random();
         for (int i = 0; i < n; i++) {
+            if (deck.isEmpty()) {
+                throw new IllegalStateException("Deck is empty");
+            }
             hand.add(deck.remove(rand.nextInt(deck.size())));
         }
         return hand;
