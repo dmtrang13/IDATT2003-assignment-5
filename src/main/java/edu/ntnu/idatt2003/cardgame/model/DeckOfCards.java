@@ -32,6 +32,15 @@ public class DeckOfCards {
     }
 
     /**
+     * Returns the number of remaining cards in the deck.
+     *
+     * @return the size of the deck
+     */
+    public int getDeckSize() {
+        return deck.size();
+    }
+
+    /**
      * Deals a hand of n cards from the deck.
      *
      * @param n the number of cards to deal
