@@ -21,7 +21,11 @@ public class View {
 
     public void start(Stage primaryStage) {
         VBox root = new VBox(15);
-        root.setAlignment(Pos.CENTER);
+        root.setAlignment(Pos.TOP_CENTER);
+        cardGrid.setAlignment(Pos.TOP_CENTER);
+        cardGrid.setVgap(10);
+        cardGrid.setPrefSize(500, 200);
+
 
         // Set text field sizes
         sumOfFacesField.setPrefWidth(100);
