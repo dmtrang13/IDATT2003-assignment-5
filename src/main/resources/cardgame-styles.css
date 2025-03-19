@@ -21,58 +21,48 @@
     -fx-hgap: 10px;
     -fx-vgap: 10px;
     -fx-pref-width: 100vw;
-    -fx-pref-height: 95vh;
+    -fx-pref-height: 90vh;
     -fx-alignment: center;
     -fx-grid-lines-visible: true;
 }
 
-/* Individual card slots - Increased Size */
+/* Individual card slots - Adjusted Size */
 .card-slot {
     -fx-border-color: black;
-    -fx-border-width: 3px;
-    -fx-pref-width: 25vw; /* Increased width */
-    -fx-pref-height: 90vh; /* Increased height */
+    -fx-border-width: 2px;
+    -fx-pref-width: 38vw; /* Adjusted width */
+    -fx-pref-height: 80vh; /* Adjusted height */
     -fx-alignment: center;
     -fx-background-color: white;
-    -fx-padding: 20px;
+    -fx-padding: 18px;
     -fx-display: flex;
     -fx-flex-direction: column;
     -fx-justify-content: center;
     -fx-align-items: center;
 }
 
-/* Smaller rectangles inside card slots for suit and face */
-.card-info {
-    -fx-border-color: black;
-    -fx-border-width: 2px;
-    -fx-min-width: 60px;
-    -fx-min-height: 50px;
-    -fx-alignment: center;
-    -fx-background-color: white;
-    -fx-padding: 5px;
-}
 
 .card-suit {
     -fx-border-color: black;
     -fx-border-width: 2px;
-    -fx-min-width: 50px;
-    -fx-min-height: 50px;
+    -fx-min-width: 75px;
+    -fx-min-height: 75px;
     -fx-alignment: center;
     -fx-background-color: white;
 }
 
-/* Smaller images inside card slots */
+/* Adjusted image sizes inside card slots */
 .card-image {
-    -fx-fit-width: 50px;
-    -fx-fit-height: 75px;
+    -fx-fit-width: 90px;
+    -fx-fit-height: 90px;
 }
 
 /* Styling for input boxes */
 .input-box {
     -fx-border-color: black;
     -fx-border-width: 2px;
-    -fx-min-width: 80px;
-    -fx-min-height: 35px;
+    -fx-min-width: 90px;
+    -fx-min-height: 40px;
     -fx-padding: 8px;
     -fx-background-color: white;
     -fx-alignment: center;
@@ -82,15 +72,15 @@
 .label {
     -fx-font-size: 16px;
     -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
-    -fx-font-weight: bold;
+    -fx-font-weight: normal;
 }
 
-/* Button Styling */
+/* Button Styling - Smaller */
 .button {
     -fx-background-color: hsl(222.2, 47.4%, 11.2%);
     -fx-text-fill: hsl(210, 40%, 98%);
     -fx-border-radius: 0.5rem;
-    -fx-padding: 12px 18px;
+    -fx-padding: 10px 16px;
     -fx-font-size: 16px;
 }
 
