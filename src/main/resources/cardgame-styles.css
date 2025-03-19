@@ -1,38 +1,99 @@
+/* JavaFX CSS for Thumbnail, Card Slots, and Input Fields */
+
 .root {
     -fx-background-color: hsl(0, 0%, 100%);
     -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
     -fx-font-family: "Inter", sans-serif;
 }
 
+.thumbnail {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
+
+/* Styling for card slots */
+.card-grid {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-pref-width: 100vw;
+    -fx-pref-height: 95vh;
+    -fx-alignment: center;
+    -fx-grid-lines-visible: true;
+}
+
+/* Individual card slots - Increased Size */
+.card-slot {
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+    -fx-pref-width: 25vw; /* Increased width */
+    -fx-pref-height: 90vh; /* Increased height */
+    -fx-alignment: center;
+    -fx-background-color: white;
+    -fx-padding: 20px;
+    -fx-display: flex;
+    -fx-flex-direction: column;
+    -fx-justify-content: center;
+    -fx-align-items: center;
+}
+
+/* Smaller rectangles inside card slots for suit and face */
+.card-info {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-min-width: 60px;
+    -fx-min-height: 50px;
+    -fx-alignment: center;
+    -fx-background-color: white;
+    -fx-padding: 5px;
+}
+
+.card-suit {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-alignment: center;
+    -fx-background-color: white;
+}
+
+/* Smaller images inside card slots */
+.card-image {
+    -fx-fit-width: 50px;
+    -fx-fit-height: 75px;
+}
+
+/* Styling for input boxes */
+.input-box {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-min-width: 80px;
+    -fx-min-height: 35px;
+    -fx-padding: 8px;
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+
+/* Styling for labels */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
+    -fx-font-weight: bold;
+}
+
+/* Button Styling */
 .button {
     -fx-background-color: hsl(222.2, 47.4%, 11.2%);
     -fx-text-fill: hsl(210, 40%, 98%);
     -fx-border-radius: 0.5rem;
-    -fx-padding: 10px 15px;
-    -fx-font-size: 14px;
+    -fx-padding: 12px 18px;
+    -fx-font-size: 16px;
 }
 
 .button:hover {
     -fx-background-color: hsl(215, 20.2%, 65.1%);
-}
-
-.text-field, .text-area {
-    -fx-background-color: hsl(210, 40%, 96.1%);
-    -fx-border-color: hsl(214.3, 31.8%, 91.4%);
-    -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
-    -fx-border-radius: 0.5rem;
-    -fx-padding: 5px;
-}
-
-.label {
-    -fx-text-fill: hsl(222.2, 47.4%, 11.2%);
-    -fx-font-size: 14px;
-    -fx-font-weight: bold;
-}
-
-.card {
-    -fx-background-color: transparent;
-    -fx-border-color: hsl(214.3, 31.8%, 91.4%);
-    -fx-padding: 15px;
-    -fx-border-radius: 0.5rem;
 }
