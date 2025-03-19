@@ -10,6 +10,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+/**
+ * Represents the view for the card game application.
+ */
 public class View {
     private GridPane cardGrid = new GridPane();
     private Button dealButton = new Button("Deal Hand");
@@ -19,6 +22,11 @@ public class View {
     private TextField queenOfSpadesField = new TextField();
     private TextField flushField = new TextField();
 
+    /**
+     * Starts the view and sets up the primary stage.
+     *
+     * @param primaryStage the primary stage for this application
+     */
     public void start(Stage primaryStage) {
         VBox root = new VBox(15);
         root.setAlignment(Pos.TOP_CENTER);
@@ -52,7 +60,6 @@ public class View {
         HBox buttonBox = new HBox(10, dealButton);
         buttonBox.setAlignment(Pos.CENTER);
 
-        // Add everything to root layout
         root.getChildren().addAll(cardGrid, inputGrid, buttonBox);
 
         Scene scene = new Scene(root, 600, 400);
@@ -63,26 +70,56 @@ public class View {
         primaryStage.show();
     }
 
+    /**
+     * Gets the grid pane for displaying cards.
+     *
+     * @return the card grid
+     */
     public GridPane getCardGrid() {
         return cardGrid;
     }
 
+    /**
+     * Gets the button for dealing a hand.
+     *
+     * @return the deal button
+     */
     public Button getDealButton() {
         return dealButton;
     }
 
+    /**
+     * Gets the text field for displaying the sum of faces.
+     *
+     * @return the sum of faces text field
+     */
     public TextField getSumOfFacesField() {
         return sumOfFacesField;
     }
 
+    /**
+     * Gets the text field for displaying the cards of hearts.
+     *
+     * @return the cards of hearts text field
+     */
     public TextField getCardsOfHeartsField() {
         return cardsOfHeartsField;
     }
 
+    /**
+     * Gets the text field for displaying if the hand has the Queen of Spades.
+     *
+     * @return the Queen of Spades text field
+     */
     public TextField getQueenOfSpadesField() {
         return queenOfSpadesField;
     }
 
+    /**
+     * Gets the text field for displaying if the hand is a flush.
+     *
+     * @return the flush text field
+     */
     public TextField getFlushField() {
         return flushField;
     }
